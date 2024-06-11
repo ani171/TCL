@@ -36,9 +36,38 @@ You should see the Tcl shell prompt (%), indicating Tcl is ready to use. <br>
 * Tcl outputs the string money is = followed by the value of money (which is 1900)
 ![image](https://github.com/ani171/TCL/assets/97838595/da40758b-5629-4a3e-9e10-70653947a193)
 
-```set a 10;\
+```
+set a 10;\
 set b [expr $a +5];\
 puts "a=$a and b=$b"
 ```
 * square brackets [ ] are used for command substitution. This means the command inside the brackets is executed first, and its result is used in place of the bracketed expression.
 
+```
+unset a
+puts "a=$a and b=$b
+```
+* Now value of a is completely undefined
+![image](https://github.com/ani171/TCL/assets/97838595/1ad9b824-9995-4c0e-9271-94818d5f3d1b)
+
+```
+if {![info exists a]}{
+set a 50
+}
+```
+* `info exists` checks if a variable exists
+* `!condition` used to check if the condition is not true
+![image](https://github.com/ani171/TCL/assets/97838595/e8221f1b-d7bf-448c-b28c-df9cec9f1c33)
+
+### If-else 
+
+```
+set num -5
+if {$num > 0} {
+    puts "$num is positive."
+} elseif {$num < 0} {
+    puts "$num is negative."
+} else {
+    puts "$num is zero."
+}
+```
