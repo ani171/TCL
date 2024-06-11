@@ -23,3 +23,21 @@ You should see the Tcl shell prompt (%), indicating Tcl is ready to use. <br>
      `sudo apt-get install tcl-doc` <br>
       This package includes man pages and other documentation files. <br>
       ![image](https://github.com/ani171/TCL/assets/97838595/953cda1a-98b1-45fb-b571-712536fe6461)
+
+### Variables in Tcl
+
+* The set command is used for creating and modifying variables in Tcl. It assigns a value to a variable
+   * Syntax `set variableName value`
+* The puts command outputs data to the standard output, typically the terminal or console. <br>
+
+`set money 1900` <br>
+* Tcl creates a variable named money and assigns it the value 1900. If money already exists, it updates its value to 1900
+`puts money is = $money` <br>
+* Tcl outputs the string money is = followed by the value of money (which is 1900)
+![image](https://github.com/ani171/TCL/assets/97838595/da40758b-5629-4a3e-9e10-70653947a193)
+
+`set a 10;\
+set b [expr $a +5];\
+puts "a=$a and b=$b"`
+* square brackets [ ] are used for command substitution. This means the command inside the brackets is executed first, and its result is used in place of the bracketed expression.
+
