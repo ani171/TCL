@@ -36,8 +36,8 @@ You should see the Tcl shell prompt (%), indicating Tcl is ready to use. <br>
 * Tcl outputs the string money is = followed by the value of money (which is 1900)
 ![image](https://github.com/ani171/TCL/assets/97838595/da40758b-5629-4a3e-9e10-70653947a193)
 
-`set a 10;\
-set b [expr $a +5];\
-puts "a=$a and b=$b"`
+`set a 10;\`
+`set b [expr $a +5];\`
+`puts "a=$a and b=$b"`
 * square brackets [ ] are used for command substitution. This means the command inside the brackets is executed first, and its result is used in place of the bracketed expression.
 
